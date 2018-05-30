@@ -237,7 +237,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n{\n    \"routes\": [\n        {\n            \"scannersIds\": [\n                \"ABC\",\n                \"DCE\",\n                \"FGH\"\n            ],\n            \"passedOrder\": [\n                \"ABC\",\n                \"DCE\",\n                \"EJF\"\n            ],\n            \"finished\": false,\n            \"_id\": \"5b0d8629b3b8c807f2817bf4\",\n            \"tagAddress\": \"CB77828A3F3D\",\n            \"__v\": 0,\n            \"trackedThing\": \"Guarda-roupa\",\n            \"timeCreated\": \"2018-05-29T17:21:59.146Z\"\n        }\n    ],\n    \"notFoundRoutes\": [\n        \"F47EB16EA1C4\"\n    ]\n}",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"routes\": [\n        {\n            \"scannersIds\": [\n                \"ABC\",\n                \"DCE\",\n                \"FGH\"\n            ],\n            \"passedOrder\": [\n                \"ABC\",\n                \"DCE\",\n                \"EJF\"\n            ],\n            \"finished\": false,\n            \"_id\": \"5b0d8629b3b8c807f2817bf4\",\n            \"tagAddress\": \"CB77828A3F3D\",\n            \"__v\": 0,\n            \"trackedThing\": \"Guarda-roupa\",\n            \"timeCreated\": \"2018-05-29T17:21:59.146Z\",\n            \"duration\": 317,\n            \"timeRemaining\": 120\n        }\n    ],\n    \"notFoundRoutes\": [\n        \"F47EB16EA1C4\"\n    ]\n}",
           "type": "json"
         }
       ]
