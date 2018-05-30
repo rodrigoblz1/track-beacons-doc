@@ -208,8 +208,8 @@ define({ "api": [
             "group": "Success 200",
             "type": "Array",
             "optional": false,
-            "field": "routes.passedOrder",
-            "description": "<p>Ids dos scanners que a tag passou próximo (na ordem).</p>"
+            "field": "routes.passedDetailedOrder",
+            "description": "<p>Ids dos scanners que a tag passou próximo (na ordem), e se está na rota ou não.</p>"
           },
           {
             "group": "Success 200",
@@ -244,7 +244,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "    HTTP/1.1 200 OK\n{\n    \"routes\": [\n        {\n            \"scannersIds\": [\n                \"ABC\",\n                \"DCE\",\n                \"FGH\"\n            ],\n            \"passedOrder\": [\n                \"ABC\",\n                \"DCE\",\n                \"EJF\"\n            ],\n            \"finished\": false,\n            \"_id\": \"5b0d8629b3b8c807f2817bf4\",\n            \"tagAddress\": \"CB77828A3F3D\",\n            \"trackedThing\": \"Guarda-roupa\",\n            \"timeCreated\": \"2018-05-29T17:21:59.146Z\",\n            \"timeRemaining\": 120\n        }\n    ],\n    \"notFoundRoutes\": [\n        \"F47EB16EA1C4\"\n    ]\n}",
+          "content": "    HTTP/1.1 200 OK\n{\n    \"routes\": [\n        {\n            \"scannersIds\": [\n                \"ABC\",\n                \"DCE\",\n                \"FGH\"\n            ],\n            \"passedOrder\": [\n                \"ABC\",\n                \"DCE\",\n                \"EJF\"\n            ],\n            \"finished\": false,\n            \"_id\": \"5b0d8629b3b8c807f2817bf4\",\n            \"tagAddress\": \"CB77828A3F3D\",\n            \"trackedThing\": \"Guarda-roupa\",\n            \"timeCreated\": \"2018-05-29T17:21:59.146Z\",\n            \"passedDetailedOrder\": [\n                {\n                    \"scannerId\": \"ABC\",\n                    \"isOnRoute\": true\n                }\n            ],\n            \"timeRemaining\": 120\n        }\n    ],\n    \"notFoundRoutes\": [\n        \"F47EB16EA1C4\"\n    ]\n}",
           "type": "json"
         }
       ]
